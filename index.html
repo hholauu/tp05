@@ -8,20 +8,28 @@
     <title>TP05</title>
 
     <style>
-
-        p {
-            font-size: 2em;
-        }
-
         h1 {
             font-size: 2em;
-            color: rgb(255, 70, 70);
+            color: rgb(126, 70, 255);
             text-shadow: 2px 2px 2px rgb(0, 0, 0);
         }
 
         strong {
-            color: rgb(255, 164, 164);
-            text-shadow: 2px 2px 2px rgb(0, 0, 0);
+            color: rgb(211, 164, 255);
+            text-shadow: 2px 2px 2px rgb(91, 0, 177);
+        }
+
+        table {
+            background-color: rgb(237 237 237);
+
+            border: 1px solid rgb(0, 0, 0);
+
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid rgb(0, 0, 0);
         }
         
     </style>
@@ -30,44 +38,393 @@
 
 <body>
 
-    <h1>Trabajo Practico 05</h1>
-    <h2><em>Lautaro Ibañez</em></h2>
+    <header>
 
-    <h3> ¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? <br> A)
-        method <br> <strong>B) action</strong> <br> C) target <br> D) url
-    </h3>
+        <h1>Trabajo 05 - formularios</h1>
+        <h2><em>Lautaro Ibañez</em></h2>
 
-    <h3>¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de
-        entrada? <br> A) data-type <br> <strong>B) input-type </strong> <br> C) type <br> D) data
-    </h3>
+    </header>
+    <main>
 
-    <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo
-        electrónico? <br> A) text <br> <strong>B) email</strong> <br> C) mail <br> D) input
-    </h3>
+        <hr>
 
-    <h3>¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
-        formulario? <br> A) description <br> B) info <br> C) placeholder <br> <strong>D) label</strong>
-    </h3>
+        <h3>Actividades:</h3>
 
-    <h3>¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?
-        <br> <strong>A) input type="submit"</strong> <br> B) button type="submit" <br> C) btn <br> D) submit
-    </h3>
+        <h3>1. ¿Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario? <br> A)
+            method <br> <strong>B) action</strong> <br> C) target <br> D) url
+        </h3>
 
-    <h3>¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
-        formulario? <br> <strong>A) required</strong> <br> B) mandatory <br> C) validate <br> D) mandatoryfield
-    </h3>
+        <h3>2. ¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de
+            entrada? <br> A) data-type <br> <strong>B) input-type </strong> <br> C) type <br> D) data
+        </h3>
 
-    <h3>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?
-        <br>A) list <br> B) dropdown <br> <strong>C) select</strong> <br> D) input type="list"
-    </h3>
+        <h3>3. ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo
+            electrónico? <br> A) text <br> <strong>B) email</strong> <br> C) mail <br> D) input
+        </h3>
 
-    <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido?
-        <br> <strong>A) text</strong> <br>B) email <br>C) mail <br>D) input
-    </h3>
+        <h3>4. ¿Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
+            formulario? <br> A) description <br> B) info <br> C) placeholder <br> <strong>D) label</strong>
+        </h3>
 
-    <h3>¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?
-        <br> <strong>A) value</strong> <br>B) default <br>C) preset <br>D) initial
-    </h3>
+        <h3>5. ¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?
+            <br> <strong>A) input type="submit"</strong> <br> B) button type="submit" <br> C) btn <br> D) submit
+        </h3>
+
+        <h3>6. ¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+            formulario? <br> <strong>A) required</strong> <br> B) mandatory <br> C) validate <br> D) mandatoryfield
+        </h3>
+
+        <h3>7. ¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?
+            <br>A) list <br> B) dropdown <br> <strong>C) select</strong> <br> D) input type="list"
+        </h3>
+
+        <h3>8. ¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido?
+            <br> <strong>A) text</strong> <br>B) email <br>C) mail <br>D) input
+        </h3>
+
+        <h3>9. ¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?
+            <br> <strong>A) value</strong> <br>B) default <br>C) preset <br>D) initial
+        </h3>
+
+        <h3>
+            10. ¿Qué son los métodos / verbos de petición HTTP? Dar ejemplos. Bibliografía <a target="_blank"
+                href="https://developer.mozilla.org/es/docs/Web/HTTP/Status">MDN</a>
+        </h3>
+        <p>
+            Un conjunto de metodos de peticion es un indicativo para realizar una accion a un recurso determinado,
+            ejemplo: <br>
+            form action="" method="post"
+        </p>
+
+        <h3>
+            11. ¿Qué son los códigos de estado de respuestas HTTP? Realizar una tabla con su clasificación. Bibliografía
+            <a target="_blank" href="https://developer.mozilla.org/es/docs/Web/HTTP/Status">MDN</a>
+        </h3>
+
+        <table>
+            <tr>
+                <th>Código</th>
+                <th>Denominación</th>
+                <th>Representación</th>
+            </tr>
+            <tr>
+                <td>100</td>
+                <td>Continue</td>
+                <td>Indica que todo hasta ahora está bien.</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Switching protocol
+                <td>El servidor acepta el cambio de protocolo.</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>processing</td>
+                <td>Esta procesando la solicitud.</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>early hints</td>
+                <td>Para pre-cargar recursos.</td>
+            </tr>
+            <tr>
+                <td>200</td>
+                <td>ok</td>
+                <td>Exito.</td>
+            </tr>
+            <tr>
+                <td>201</td>
+                <td>created</td>
+                <td>Se creo un recurso.</td>
+            </tr>
+            <tr>
+                <td>202</td>
+                <td>accepted</td>
+                <td>Peticion aceptada.</td>
+            </tr>
+            <tr>
+                <td>203</td>
+                <td>non authoritative information</td>
+                <td>Se completo, pero no se obtuvo el contenido.</td>
+            </tr>
+            <tr>
+                <td>204</td>
+                <td>no content</td>
+                <td>La peticion se completo pero no hay contenido.</td>
+            </tr>
+            <tr>
+                <td>205</td>
+                <td>reset content</td>
+                <td>Se completo pero ademas de no haber contenido los datos son volatiles.</td>
+            </tr>
+            <tr>
+                <td>206</td>
+                <td>partial content</td>
+                <td>Se mostrara parcialmente el contenido.</td>
+            </tr>
+            <tr>
+                <td>207</td>
+                <td>multi status</td>
+                <td>Un multi-estado de un archivo xlm.</td>
+            </tr>
+            <tr>
+                <td>208</td>
+                <td>multi status</td>
+                <td>El listado de elementos se notifico.</td>
+            </tr>
+            <tr>
+                <td>226</td>
+                <td>IM used</td>
+                <td>El servidor ha cumplido una peticion get.</td>
+            </tr>
+            <tr>
+                <td>300</td>
+                <td>multiple choice</td>
+                <td>Mas de una posible respuesta a la solicitud.</td>
+            </tr>
+            <tr>
+                <td>301</td>
+                <td>moved permanently</td>
+                <td>La url solicitada fue cambiada.</td>
+            </tr>
+            <tr>
+                <td>302</td>
+                <td>found</td>
+                <td>Url cambiada temporalmente.</td>
+            </tr>
+            <tr>
+                <td>303</td>
+                <td>see other</td>
+                <td>Redireccion a un nuevo recurso.</td>
+            </tr>
+            <tr>
+                <td>304</td>
+                <td>not modified</td>
+                <td>Puede usar una version almacenada en el cache.</td>
+            </tr>
+            <tr>
+                <td>305</td>
+                <td>use proxy</td>
+                <td>Fue definida en una version previa del protocolo HTTP.</td>
+            </tr>
+            <tr>
+                <td>306</td>
+                <td>unused</td>
+                <td>No se usa mas, se usaba en versiones anteriores de HTTP.</td>
+            </tr>
+            <tr>
+                <td>307</td>
+                <td>temporary redirect</td>
+                <td>Redirige a otra url que tenga el recurso.</td>
+            </tr>
+            <tr>
+                <td>308</td>
+                <td>permanent redirect</td>
+                <td>Significa que el recurso esta en otra url.</td>
+            </tr>
+            <tr>
+                <td>400</td>
+                <td>bad request</td>
+                <td>El servidor no puedo interpretar la solicitud.</td>
+            </tr>
+            <tr>
+                <td>401</td>
+                <td>unauthorized</td>
+                <td>Es necesario autenticar.</td>
+            </tr>
+            <tr>
+                <td>402</td>
+                <td>payment required</td>
+                <td>Se penso para pagos digitales pero no se usa.</td>
+            </tr>
+            <tr>
+                <td>403</td>
+                <td>forbidden</td>
+                <td>No posee permisos necesarios para cierto contenido.</td>
+            </tr>
+            <tr>
+                <td>404</td>
+                <td>not found</td>
+                <td>No se encontro el archivo solicitado.</td>
+            </tr>
+            <tr>
+                <td>405</td>
+                <td>method not allowed</td>
+                <td>El metodo solicitado existe, pero se deshabilito.</td>
+            </tr>
+            <tr>
+                <td>406</td>
+                <td>not acceptable</td>
+                <td>No se encuentra contenido seguido por el criterio./td>
+            </tr>
+            <tr>
+                <td>407</td>
+                <td>proxy authentication required</td>
+                <td>La autenticacion se tiene que hacer desde un proxy.</td>
+            </tr>
+            <tr>
+                <td>408</td>
+                <td>request timeout</td>
+                <td>Conexion inactiva.</td>
+            </tr>
+            <tr>
+                <td>409</td>
+                <td>conflict</td>
+                <td>Conflicto con el estado actual del servidor.</td>
+            </tr>
+            <tr>
+                <td>410</td>
+                <td>gone</td>
+                <td>El contenido fue borrado</td>
+            </tr>
+            <tr>
+                <td>411</td>
+                <td>lenght required</td>
+                <td>El campo de encabezado no esta definido.</td>
+            </tr>
+            <tr>
+                <td>412</td>
+                <td>pre-condition failed</td>
+                <td>El servidor no cumple con las condiciones del encabezado.</td>
+            </tr>
+            <tr>
+                <td>413</td>
+                <td>payload too large</td>
+                <td>La peticion es mas larga que los limites del servidor.</td>
+            </tr>
+            <tr>
+                <td>414</td>
+                <td>url too long</td>
+                <td>La url solicitada es mas larga de lo que el servidor reconoce.</td>
+            </tr>
+            <tr>
+                <td>415</td>
+                <td>unsupported media type</td>
+                <td>El formato multimedia no es compatible.</td>
+            </tr>
+            <tr>
+                <td>416</td>
+                <td>request range not satisfiable</td>
+                <td>El rango especificado no cumple.</td>
+            </tr>
+            <tr>
+                <td>417</td>
+                <td>expectation failed</td>
+                <td>La expectativa indicada por el campo de encabezado no puede ser cumplida por el servidor.</td>
+            </tr>
+            <tr>
+                <td>418</td>
+                <td>i'm a teapot</td>
+                <td>El servidor se rehusa a intentar hacer café con una tetera.</td>
+            </tr>
+            <tr>
+                <td>421</td>
+                <td>misdirected request</td>
+                <td>La peticion se envio a un servidor incapaz de producir respuesta.</td>
+            </tr>
+            <tr>
+                <td>422</td>
+                <td>unprocessable entity</td>
+                <td>La peticion estaba bien pero no se pudo seguir por errores semanticos.</td>
+            </tr>
+            <tr>
+                <td>423</td>
+                <td>locked</td>
+                <td>El recurso esta bloqueado.</td>
+            </tr>
+            <tr>
+                <td>424</td>
+                <td>failed dependency</td>
+                <td>La peticion fallo debido a una falla de peticion previa.</td>
+            </tr>
+            <tr>
+                <td>426</td>
+                <td>upgrade required</td>
+                <td>Necesario actualizar el protocolo.</td>
+            </tr>
+            <tr>
+                <td>428</td>
+                <td>pre-condition required</td>
+                <td>El servidor requiere que la solicitud sea condicional.</td>
+            </tr>
+            <tr>
+                <td>429</td>
+                <td>too many requests</td>
+                <td>El usuario envio demasiadas solicitudes.</td>
+            </tr>
+            <tr>
+                <td>431</td>
+                <td>request header fields too large</td>
+                <td>El servidor no va a procesar la solicitud por el largo del encabezado.</td>
+            </tr>
+            <tr>
+                <td>451</td>
+                <td>unavailable for legal reasons</td>
+                <td>El usuario solicito un recurso ilegal.</td>
+            </tr>
+            <tr>
+                <td>500</td>
+                <td>internal server error</td>
+                <td>El servidor encontro una situacion que no sabe solucionar.</td>
+            </tr>
+            <tr>
+                <td>501</td>
+                <td>not implemented</td>
+                <td>El metodo solicitado no esta soportado por el servidor.</td>
+            </tr>
+            <tr>
+                <td>502</td>
+                <td>bad gateway</td>
+                <td>El servidor obtuvo una respuesta invalida mientra trabajaba con una puerta de enlace.</td>
+            </tr>
+            <tr>
+                <td>503</td>
+                <td>service unavailable</td>
+                <td>El servidor no esta listo para manejar la peticion.</td>
+            </tr>
+            <tr>
+                <td>504</td>
+                <td>gateway timeout</td>
+                <td>El servidor trabaja como puerta de enlace y no puede obtener una respuesta a tiempo.</td>
+            </tr>
+            <tr>
+                <td>505</td>
+                <td>http version not supported</td>
+                <td>La version de http usada no esta soportada.</td>
+            </tr>
+            <tr>
+                <td>506</td>
+                <td>variant also negotiaties</td>
+                <td>El servidor tiene un error de configuracion interna.</td>
+            </tr>
+            <tr>
+                <td>507</td>
+                <td>insufficient storage</td>
+                <td>El servidor esta mal configurado internamente.</td>
+            </tr>
+            <tr>
+                <td>508</td>
+                <td>loop detected</td>
+                <td>El servidor detecto un ciclo infinito mientras procesaba la solicitud.</td>
+            </tr>
+            <tr>
+                <td>510</td>
+                <td>not extended</td>
+                <td>Extenciones adicionales requeridas.</td>
+            </tr>
+            <tr>
+                <td>511</td>
+                <td>network authentication required</td>
+                <td>El cliente necesita autenticar.</td>
+            </tr>
+        </table>
+
+        <hr>
+
+    </main>
+    <footer>
+        <p>©Lautaro Ibañez 2024</p>
+    </footer>
 
 </body>
 

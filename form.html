@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formularios</title>
+    <style>
+        html {
+            font-size: 10px;
+            background-color: #000000;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: rgb(175, 141, 255);
+            text-shadow: 1px 1px 8px #7023ff;
+        }
+
+        p {
+            color: aliceblue;
+            margin-top: 30px;
+        }
+
+        div {
+            color: #ffffff;
+            background-color: #292929;
+            margin: 5px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        legend {
+            color: #ffffff;
+            font-size: 2em;
+        }
+
+        fieldset {
+            color: #ffffff;
+            margin: 40px;
+            background-color: #070707;
+        }
+
+        label {
+            font-size: 1.4em;
+            margin: 20px;
+        }
+
+        input {
+            background-color: rgb(175, 141, 255);
+            color: #ffffff;
+        }
+
+        select {
+            background-color: rgb(175, 141, 255);
+            color: #ffffff;
+        }
+
+        textarea {
+            background-color: rgb(175, 141, 255);
+            color: #ffffff;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        #ct {
+            font-size: 2em;
+            color: #000000;
+        }
+
+        footer {
+            background-color: #292929;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1><u>Trabajos Práctico 05</u></h1>
+
+        <h1>Formulario para entrenadores Pokémon:</h1>
+
+    </header>
+
+    <main>
+
+        <form action="" method="post">
+
+            <fieldset>
+
+                <legend>Datos personales</legend>
+
+
+                <div>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre">
+
+                    <label for="correo">Correo electronico</label>
+                    <input type="email" name="correo" id="correo">
+
+                    <label for="ciu">Ciudad</label>
+                    <input type="text" name="ciu" id="ciu">
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido">
+
+                    <label for="nace">Fecha De Nacimiento</label>
+                    <input type="date" name="nace" id="nace">
+
+                    <label for="pro">Provincia</label>
+                    <input type="text" name="pro" id="pro">
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="dni">__DNI__</label>
+                    <input type="number" name="dni" id="dni">
+
+                    <label for="cel">Numero de Celular</label>
+                    <input type="number" name="cel" id="cel">
+
+                    <label for="ec">Estado Civil</label>
+                    <input type="text" name="ec" id="ec">
+
+                </div>
+
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Redes Sociales</legend>
+
+                <div>
+
+                    <label for="ig">Instagram</label>
+                    <input type="text" name="ig" id="ig">
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="x">Usuario de X</label>
+                    <input type="text" name="x" id="x">
+
+                </div>
+
+                <br>
+
+                <div>
+
+                    <label for="fb">Facebook</label>
+                    <input type="text" name="fb" id="fb">
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Interes personal</legend>
+
+                <div>
+
+                    <label for="deporte">Fútbol</label>
+                    <input type="radio" name="deporte" id="futbol" value="futbol">
+                    <label for="deporte">Volley</label>
+                    <input type="radio" name="deporte" id="volley" value="volley">
+                    <label for="deporte">Natación</label>
+                    <input type="radio" name="deporte" id="natacion" value="natacion">
+                    <label for="deporte">Basquet</label>
+                    <input type="radio" name="deporte" id="basquet" value="basquet">
+                    <label for="deporte">Ninguno</label>
+                    <input type="radio" name="deporte" id="ninguno" value="ninguno">
+
+                </div>
+
+                <div>
+
+                    <label for="equipos">Equipo favorito</label>
+                    <select name="equipos" id="equipos">
+                        <option value=""> </option>
+                        <option value="boca">Boca</option>
+                        <option value="river">River</option>
+                        <option value="messi">Messi</option>
+                        <option value="...">No me gusta el futbol</option>
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <p>Escribe sobre ti (opcional)</p>
+
+                    <label for="texto"></label>
+                    <textarea name="texto" id="texto" cols="30" rows="5"></textarea>
+
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="enviar" id="ct">
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <h3><u>Nuestras redes sociales</u></h3>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.whatsapp.com/?lang=es_LA"> <img src="assets/ws.png" alt="ws" height="50px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/"><img src="assets/ig.png" alt="ig" height="45px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/?locale=es_LA"><img src="assets/fb.png" alt="fb" height="45px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://x.com/"><img src="assets/x.png" alt="x" height="50px"></a>
+            </li>
+        </ul>
+
+        <h3>©Lautaro Ibañez 2024</h3>
+
+    </footer>
+
+</body>
+
+</html>
